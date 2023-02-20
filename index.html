@@ -6,11 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Zerskin</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
     <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
     <link rel="stylesheet" href="w3.css">
+    <link rel="stylesheet" href="style.css">
     <script src="https://use.fontawesome.com/b442388ecb.js"></script>
 
 </head>
@@ -51,6 +51,7 @@
       </div>
     <!-- End Carousel -->
 
+    <!-- TOPUP -->
     <div class="container">
         <div class="row justivy-content-center">
             <div class="title-product" style="font-weight: bold; font-size: 18px;">
@@ -58,18 +59,24 @@
             </div>
             <div class="col-4">
                 <div class="card">
+                    <a href="#">
                     <div class="gambar-product">
-                        <img src="assets/product/mobilelegends.png" alt="ml" width="70px">
+                        <img src="assets/product/mobilelegends.png" alt="ml" width="70px" style="top: -34px;">
                     </div>
                     <p>INSTANT 24 JAM</p>
                     <div class="title-product">
                         <h5>MOBILE</h5>
-                        <h5 style="position: absolute; left: 23px;">LEGENDS</h5>
                     </div>
+                    <div class="title-product2">
+                    <h5>LEGENDS
+                    </h5>
+                    </div>
+                    </a>
                 </div>
             </div>
             <div class="col-4">
                 <div class="card">
+                    <a href="#">
                     <div class="gambar-product">
                         <img src="assets/product/valorant.jpg" alt="ml" width="70px">
                     </div>
@@ -77,9 +84,12 @@
                     <div class="title-product">
                         <h5>VALORANT</h5>
                     </div>
+                    </a>
                 </div>
-            </div><div class="col-4">
+            </div>
+            <div class="col-4">
                 <div class="card">
+                    <a href="#">
                     <div class="gambar-product">
                         <img src="assets/product/freefire.png" alt="ml" width="70px">
                     </div>
@@ -87,10 +97,92 @@
                     <div class="title-product">
                         <h5>FREE FIRE</h5>
                     </div>
+                    </a>
                 </div>
             </div>
+            <div class="col-4">
+                <div class="card">
+                    <a href="#">
+                    <div class="gambar-product">
+                        <img src="assets/product/GenshinImpact.png" alt="ml" width="70px" style="top: -34px;">
+                    </div>
+                    <p>INSTANT 24 JAM</p>
+                    <div class="title-product">
+                        <h5>GENSHIN</h5>
+                    </div>
+                    <div class="title-product2">
+                    <h5>IMPACT</h5>
+                    </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="card">
+                    <a href="#">
+                    <div class="gambar-product">
+                        <img src="assets/product/pubgmobile.png" alt="ml" width="70px" style="top: -34px;">
+                    </div>
+                    <p>INSTANT 24 JAM</p>
+                    <div class="title-product">
+                        <h5>PUBG</h5>
+                    </div>
+                    <div class="title-product2">
+                    <h5>MOBILE</h5>
+                    </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="card">
+                    <a href="#">
+                    <div class="gambar-product">
+                        <img src="assets/product/LifeAfter.png" alt="ml" width="70px">
+                    </div>
+                    <p>INSTANT 24 JAM</p>
+                    <div class="title-product">
+                        <h5>LIFEAFTER</h5>
+                    </div>
+                    </a>
+                </div>
+            </div>
+
+
+
         </div>
     </div>
+    <!-- END TOPUP -->
+
+    <!-- NAVBAR -->
+    <footer>
+        <nav>
+          <div class="row navbawah">
+            <div class="col-4">
+                <div class="navcard">
+                    <a href="#">
+                    <i class="fa-solid fa-house active"></i><br>
+                    HOME</a>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="navcard">
+                    <a href="#">
+                    <i class="fa-solid fa-clock-rotate-left tengah"></i>
+                    HISTORY</a>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="navcard ">
+                    <a href="#">
+                    <i class="fa-solid fa-user"></i><br>
+                    AKUN</a>
+                </div>
+            </div>
+          </div>
+        </nav>
+      </footer>
+      
+    <!-- END NAVBAR -->
+
 
     
 
@@ -103,5 +195,18 @@
       
     <script src="script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script>
+        var links = document.querySelectorAll('.navcard a');
+      
+        for (var i = 0; i < links.length; i++) {
+          links[i].addEventListener('click', function() {
+            for (var j = 0; j < links.length; j++) {
+              links[j].querySelector('i').classList.remove('active');
+            }
+            this.querySelector('i').classList.add('active');
+          });
+        }
+      </script>
+      
 </body>
 </html>

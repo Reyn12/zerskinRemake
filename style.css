@@ -51,7 +51,7 @@ header {
 
 }
 .search .form-control{
-    padding-left: 36px;
+    padding-left: 47px;
     width: 350px;
 }
 
@@ -67,7 +67,7 @@ header {
     margin-left: 4px;
     border-radius: 20px;
     background-size: cover;
-    width: 320px;
+    width: 335px;
 }
 
 .carousel__slider {
@@ -123,6 +123,7 @@ header {
 
 
 .container {
+    padding-bottom: 20px;
     position: relative;
     top: -80px;
 }
@@ -136,7 +137,11 @@ header {
     background-color: #282850;
     border-radius: 10px;
     color: white;
-    padding-bottom: 15px;
+    padding-bottom: 2px;
+}
+.card a {
+    text-decoration: none;
+    color: white;
 }
 
 .card .gambar-product img {
@@ -149,7 +154,67 @@ header {
     top: 55px;
     font-size: 10px;
 }
+.card .title-product {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .card .title-product h5{
     font-weight: bold;
     font-size: 12px;
 }
+
+.card .title-product2 {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card .title-product2 h5{
+    font-weight: bold;
+    font-size: 12px;
+}
+
+/* NAVBAR BAWAH */
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    height: 70px;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #282850;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+    color: white;
+  }
+  .navcard {
+    text-align: center;
+  }
+  .navcard{
+    margin: 20px;
+  }
+  .navcard i{
+    font-size: 20px;
+    color: white;
+    margin-bottom: 10px;
+  }
+  .navcard .active{
+    font-size: 20px;
+    color: #7194d1;
+    margin-bottom: 10px;
+  }
+  .navcard a{
+    text-decoration: none;
+    color: white;
+  }
+/* END NAVBAR BAWAH */
