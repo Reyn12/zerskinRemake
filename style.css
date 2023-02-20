@@ -58,13 +58,13 @@ header {
 /* Carousel */
 .carousel {
     position: absolute;
+    text-align: center;
     top: -90px;
     margin: 20px;
     position: relative;
 }
 .carousel img {
     border: 1px solid white;
-    margin-left: 4px;
     border-radius: 20px;
     background-size: cover;
     width: 335px;
