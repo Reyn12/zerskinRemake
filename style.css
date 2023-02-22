@@ -218,3 +218,17 @@ footer {
     color: white;
   }
 /* END NAVBAR BAWAH */
+
+
+/* MOBILE LEGENDS */
+.logo-game {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 120px;
+}
+.logo-game img {
+  border-radius: 12px;
+}
+/* END MOBILE LEGENDS */
+
